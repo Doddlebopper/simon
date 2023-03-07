@@ -1,8 +1,8 @@
 const btnDescriptions = [
-  { file: 'assets_sound1.mp3', hue: 120 },
-  { file: 'assets_sound2.mp3', hue: 0 },
-  { file: 'assets_sound3.mp3', hue: 60 },
-  { file: 'assets_sound4.mp3', hue: 240 },
+  { file: 'sound1.mp3', hue: 120 },
+  { file: 'sound2.mp3', hue: 0 },
+  { file: 'sound3.mp3', hue: 60 },
+  { file: 'sound4.mp3', hue: 240 },
 ];
 
 class Button {
@@ -46,7 +46,7 @@ class Game {
     this.allowPlayer = false;
     this.sequence = [];
     this.playerPlaybackPos = 0;
-    this.mistakeSound = loadSound('assets_error.mp3');
+    this.mistakeSound = loadSound('error.mp3');
 
     document.querySelectorAll('.game-button').forEach((el, i) => {
       if (i < btnDescriptions.length) {
